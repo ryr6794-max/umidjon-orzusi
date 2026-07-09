@@ -113,5 +113,5 @@ async def get_gender(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     await query.answer()
     ctx.user_data["gender"] = query.data.split("_")[1]
 
-    keyboard = [[
+    keyboard = [[]]
         InlineKeyboardButton("👨 Erkak", callback_data="looking_erkak"),
